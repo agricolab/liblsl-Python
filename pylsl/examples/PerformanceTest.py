@@ -303,9 +303,9 @@ markerIn = MarkerInlet()
 
 if haspyqtgraph:
     qapp = pg.QtGui.QApplication(sys.argv)
-    qwindow = pg.plot()
+    qwindow = pg.plot(title="pylsl PerformanceTest")
     qwindow.clear()
-    qwindow.parent().setWindowTitle("pylsl PerformanceTest")
+    
 
 
 def update():
